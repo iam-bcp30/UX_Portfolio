@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
 
-    <!-- To do:
-    Add about, skills, contact, profile image, change "view", check contrast -->
-    
+   <!-- Meta Tags-->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    
     <!-- my css stylsheet -->
     <link rel="stylesheet" href="css/index.css">
 
@@ -19,31 +19,35 @@
   </head>
 
   <body>
+
     <!-- Paste Navigation Code Below -->
-    <!-- As a heading -->
     <nav class="navbar navbar-dark bg-transparent">
-        <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
-            <img style="max-width:50px; margin-top: -7px;"
+        <a class="navbar-brand" rel="home" href="/index.html" >
+            <img class="headshot" style="max-width:50px; margin-top: -7px;"
                  src="images/Headshot-cirlce.png">
-                 <span class="navbar-brand mb-0 h1">Brandon Pennington</span>
-        </a>
-        
+                 <span class="navbar-brand mb-0 h1">Brandon Pennington</span>  
+        </a> 
+        <a class="nav-item nav-link ml-auto active" href="/index.html">Home</a>
+        <a class="nav-item nav-link " href="/aboutMe.html">About Me</a>   
+        <a class="nav-item nav-link" href="/skills.html">Skills</a>  
+        <a class="nav-item nav-link" href="/contact.html">Contact</a>
     </nav>
 
     <!-- Jumbotron-->
-    <div class="jumbotron jumbotron-fluid text-center shadow-sm bg-white">
+    <div class="jumbotron jumbotron-fluid text-center shadow-lg bg-white">
       <div class="container">
         <h1 class="display-4">Hi, I'm <span style="color: #ff966f">Brandon.</span></h1>
         <blockquote class="blockquote">
             <p class="mb-0">User Experience Designer and Problem-Solving Enthusiast
             </p>
           </blockquote>
-              <img src="images/Icon awesome-chevron-down@2x.png" class="arrow">
+          <div class="floating">
+              <a href="#projects"><img  src="images/Icon awesome-chevron-down@2x.png" class="arrow"></a></div>
       </div>
     </div>
 
     <!-- Heading -->
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
 
     <!-- Cards -->
     <div class="container-fluid content">   
@@ -52,8 +56,9 @@
       <!-- Card 1 -->
     <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-white rounded">
-          <img  src="images/SOL_card.png" class="card-img-top" alt="...">          
+          <img src="images/SOL_card.png" class="card-img-top" alt="Sol App interface">       
           <div class="card-body">
+            <a href="https://drive.google.com/open?id=1gYjINGPlzf4evY2q8on44P2AzlYcnaJgNhOX4a19jv8" class="stretched-link" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -64,8 +69,16 @@
         <div class="card cardSideText">
             <div class="card-body">
                 <h5 class="card-title">Sol</h5>
-                <p class="card-text">Acheiving sun exposure through technology</p>
-                <a href="#" class="btn btn-primary">Google Slide Deck</a>
+                <p class="card-text">The Sol app monitors time spent outdoors by using smart devices to detect sunlight exposure and setting personalized goals for parents and children.</p>
+                <br>
+                <p class="card-text">Role: UX Designer, UX Researcher</p>
+                <br>
+                <p class="card-text">Methods: affinity diagram, competitor analysis, empathy map, prioritization matrix, problem statement, proto persona, user surveys, usability testing, user flow, user interviews, user journey map, user persona</p>
+                <div class="btn-group mr-2" role="group" aria-label="Button group example">
+                        <a href="https://xd.adobe.com/view/6fcd519f-e2a1-4e2b-4123-83ff9e9691c0-19fc/?fullscreen" target="_blank" class="btn btn-primary">View Clickable Prototype</a></div>               
+                <div class="btn-group" role="group" aria-label="Button group example">
+                        <a href="https://drive.google.com/open?id=1gYjINGPlzf4evY2q8on44P2AzlYcnaJgNhOX4a19jv8" target="_blank" class="btn btn-primary" id="slidesButton">View Google Slides</a>
+                        </div>             
               </div>
         </div>
       </div>
@@ -74,8 +87,9 @@
       <!-- Card 2 -->
       <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-dark rounded">
-          <img src="images/GDL_card.png" class="card-img-top" alt="...">
+          <img src="images/GADOL.png" class="card-img-top" alt="Georgia DOL interface">
           <div class="card-body">
+            <a href="https://drive.google.com/open?id=1izjuQ1xzcySJGyxixWcRoZnYjriOnI_JDxcD55IBPm8" class="stretched-link" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -84,11 +98,19 @@
       <!-- Card 2 Side Text -->
       <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
         <div class="card cardSideText">
-          <div class="card-body">
-            <h5 class="card-title">Georgia Department of Labor</h5>
-            <p class="card-text">Redesigning for a government agency presents a challenge of how to present large quantities of information in a meaningful way. In this project I took on the project manager role, overseeing the UX process and coordinating meetings of UX Designers.</p>
-            <a href="#" class="btn btn-primary ">View Google Slide Deck</a>
-          </div>
+            <div class="card-body">
+                <h5 class="card-title">Georgia Department of Labor Website</h5>
+                <p class="card-text">Redesigning for a government agency presents a challenge of how to present large quantities of information in a meaningful way.</p>
+                <br>
+                <p class="card-text">Role: UX Designer, UX Researcher</p>
+                <br>
+                <p class="card-text">Methods: affinity diagram, competitor analysis, empathy map, prioritization matrix, problem statement, proto persona, user surveys, usability testing, user flow, user interviews, user journey map, user persona</p>
+                <div class="btn-group mr-2" role="group" aria-label="Button group example">
+                        <a href="https://www.figma.com/file/a58mWV01q5Jd78Vwl6wvsn/Whimsical-Wombats_GA-DOL?node-id=378%3A0" target="_blank" class="btn btn-primary">View Clickable Prototype</a></div>               
+                <div class="btn-group" role="group" aria-label="Button group example">
+                        <a href="https://drive.google.com/open?id=1izjuQ1xzcySJGyxixWcRoZnYjriOnI_JDxcD55IBPm8 target="_blank" class="btn btn-primary" id="slidesButton">View Google Slides</a>
+                        </div>             
+              </div>
         </div>
       </div>
       <!-- End Card 2 Side Text -->
@@ -96,8 +118,9 @@
       <!-- Card 3 -->
       <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
         <div class="card shadow-sm bg-white rounded">
-          <img src="images/DGH_Home.png" class="card-img-top" alt="...">
+          <img src="images/DGH_Home.png" class="card-img-top" alt="doctors for global health interface">
           <div class="card-body">
+            <a href="https://drive.google.com/open?id=16jy_IFQBBwDRAZPyLiQGvQNupyXl1UqYNs9DOwu6wv8" class="stretched-link" target="_blank"></a>
           </div>
         </div>
       </div>
@@ -107,10 +130,17 @@
       <div class="cardContainer col-lg-6 col-md-6 col-sm-12">
         <div class="card cardSideText">
             <div class="card-body">
-                <h5 class="card-title">Doctors for Global Health</h5>
-                <p class="card-text">Redesigning for a non-profit</p>
-              </table>
-              <a href="#" class="btn btn-primary">Google Slide Deck</a>
+                <h5 class="card-title">Doctors for Global Health Website</h5>
+                <p class="card-text">Redesigning for a government agency presents a challenge of how to present large quantities of information in a meaningful way.</p>
+                <br>
+                <p class="card-text">Role: UX Designer, UX Researcher</p>
+                <br>
+                <p class="card-text">Methods: affinity diagram, competitor analysis, empathy map, prioritization matrix, problem statement, proto persona, user surveys, usability testing, user flow, user interviews, user journey map, user persona</p>
+                <div class="btn-group mr-2" role="group" aria-label="Button group example">
+                        <a href="https://xd.adobe.com/view/a9784304-a9b4-4695-47e1-612306ee994f-df49/" target="_blank" class="btn btn-primary">View Clickable Prototype</a></div>               
+                <div class="btn-group" role="group" aria-label="Button group example">
+                        <a href="https://drive.google.com/open?id=16jy_IFQBBwDRAZPyLiQGvQNupyXl1UqYNs9DOwu6wv8" target="_blank" class="btn btn-primary" id="slidesButton">View Google Slides</a>
+                        </div>             
               </div>
         </div>
       </div>

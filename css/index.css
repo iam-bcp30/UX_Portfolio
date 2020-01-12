@@ -1,22 +1,61 @@
 body {
     font-family: 'Raleway', sans-serif;
     color: #fefefe;
-    background-color: #222431;
+    background-color: #fefefe;
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.link {
+    color: #ff966f;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #fefefe;
+}
+
  .navbar {
     position: absolute;
     z-index:2;
     width: 100%;
  }
 
+ .nav-item {
+     color: #fefefe
+ }
+
+ .nav-item:hover {
+     color: #ff966f;
+ }
+
+ .active {
+     color: #ff966f;
+ }
+
  .navbar-brand {
     font-family: 'Lobster', cursive;
+ }
+
+ .headshot {
+     border: #fefefe;
+     border-style: solid;
+     border-radius: 50%;
+     margin: 7px;
+ }
+
+ .headshot:hover {
+     border: #ff966f;
+     border-style: solid;
+     border-radius: 50%;
  }
 
 /* h2 */
 h2 {
     font-family: 'Lobster', cursive;
-    color: #ff966f;
+    color: #222431;
     font-weight: 900;
     padding: 30px;
 }
@@ -31,6 +70,7 @@ h2 {
     justify-content: center;
     background-image: url("../images/fern-bg.png");
     background-size: cover;
+    margin: 0;
 }
 
 .display-4 {
@@ -46,11 +86,38 @@ h2 {
     width: 50px; 
 }
 
+/* The animation code */
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 50px);
+    width: 50px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 7px); }
+    to   { transform: translate(0, -0px); }    
+}
+  
+  /* The element to apply the animation to */
+  .arrow {
+    animation-name: animate-arrow;
+    animation-duration: 5s;
+  }
+
 /* cards */
 
 .card-title {
-    color: #ff966f;
+    color: #222431;
 }
+
 h5 {
     font-weight: bold!important;
     color:#fefefe;
@@ -61,19 +128,32 @@ h5 {
     height: 15vw;
     object-fit: cover;
     object-position: top;
+    border: #222431;
+    border-style: solid;
 }
 
 .btn {
-    background-color: #F1F2EB;
-    border: none;
+    background-color: #222431;
+    border: #222431;
+    border-style: solid;
     width: 50%;
-    color: #222431;
+    color: #F1F2EB;
 }
 
 .btn:hover {
     background-color: #ff966f;
-    color: #011627;
+    border: #ff966f;
+    border-style: solid;
+    color: #222431;
+
   }
+
+#slidesButton {
+    border: #222431;
+    border-style: solid;
+    background-color: #fefefe;
+    color: #222431;
+}
 
 .card {
     border: none;
@@ -94,8 +174,73 @@ h5 {
     object-fit: cover;
     }
 
+.card-text {
+    color: #222431;
+}
+
 /* Card Side Text */
 
 .cardSideText {
     background: none;
 }
+
+/* about me */
+
+#blurb_p {
+    margin: 70px;
+    color: #fefefe;
+    text-align: left;
+  }
+  
+  #heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+      "profile blurb blurb"
+      "profile blurb blurb"
+      "profile blurb blurb";
+  }
+  
+  #profile {
+    grid-area: profile;
+    background-color: none;
+    justify-content: space-around;
+    align-content: center;
+  }
+  
+  #blurb {
+    grid-area: blurb;
+    background-color: none;
+    justify-content: 0px 5%;
+    color: #011627
+  }
+  
+  .heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+
+  /* Tables */
+  
+.borderless td, .borderless th {
+    border: none;
+}
+
+.table {
+    margin: 70px;
+}
+
+.bold-head {
+    font-size: 20px;
+    font-weight: 500;
+    color:#ff966f;
+}
+ 
+  
