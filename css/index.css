@@ -150,9 +150,17 @@ h5 {
 
 #slidesButton {
     border: #222431;
-    border-style: solid;
+    border-style: dashed;
     background-color: #fefefe;
     color: #222431;
+}
+
+#slidesButton:hover {
+    background-color: #222431;
+    border: #222431;
+    border-style: solid;
+    width: 50%;
+    color: #F1F2EB;
 }
 
 .card {
@@ -205,7 +213,6 @@ h5 {
   
   #profile {
     grid-area: profile;
-    background-color: none;
     justify-content: space-around;
     align-content: center;
   }
