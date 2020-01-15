@@ -265,5 +265,11 @@ td {
 .skillsContainer {
     background-color: #222431;
 }
+
+/* Forms */
+
+label {
+    color: #222431;
+}
  
   
